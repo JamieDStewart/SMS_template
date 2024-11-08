@@ -6,7 +6,7 @@ The VS Code plugin Emulicious Debugger is used for debugging the binary.
 
 This repository additoinally uses GitHub Actions to demonstrate how these can be used with a SMS development project to help maintain the stability of the build.
 
-##Dependencies
+## Dependencies
 
 Building the project requires the use of [CMake](https://cmake.org/download/) and [Ninja](https://github.com/ninja-build/ninja/releases). These can be installed from their respective links, once Ninja is installed you should add it to the PATH environment variable so that it will be picked up in the CMake build process for the project.
 
@@ -18,7 +18,7 @@ To make everything a bit nicer in VS code there are a couple of extensions that 
   [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
   [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 
-##Emulators 
+## Emulators 
 
 Unless you're going to build the rom and put it straight onto a physical SMS you will need to make use of an emulator for testing and debugging purposes. I recommend using [emulicious](https://emulicious.net/downloads/) as it has a works with debugging the way this repository is set up (on Windows -- sorry to those of you on Unix, though I will implement Unix support on this repo).  
 
