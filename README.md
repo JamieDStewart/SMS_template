@@ -1,5 +1,7 @@
 # SMS_template
 
+![Build Binary Workflow](https://github.com/JamieDStewart/SMS_template/actions/workflows/cmake-build-sms-binary.yml/badge.svg)
+
 This is a repository demonstrating how to implement a basic Sega Master System development setup using Visual Studio Code with no dependencies on any existing libraries using CMake and WLA-DX to compile and link the binary.
 
 The VS Code plugin Emulicious Debugger is used for debugging the binary.
