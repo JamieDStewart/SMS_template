@@ -1,0 +1,37 @@
+# This starter workflow is for a CMake project running on multiple platforms. There is a different starter workflow if you just want a single platform.
+# See: https://github.com/actions/starter-workflows/blob/main/ci/cmake-single-platform.yml
+name: Build SMS Rom on Windows
+#on this is a review trigger - describes when the workflow/action will be executed. To be executed on push, and on pull request to "main"
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      # Set fail-fast to false to ensure that feedback is delivered for all matrix combinations. Consider changing this to true when your workflow is stable.
+      fail-fast: false
+
+      matrix:
+        os: [windows-latest]
+        type: [Debug, Release]
+        
+    steps:
+    #Steps to building - Check out the code
+    - name: Checkout code
+      uses: actions/checkout@v4
+    #Step to install Ninja over Make default
+    - name: Install Ninja
+      uses: seanmiddleditch/gha-setup-ninja@v3
+
+    - name: Build SMS binary
+      # Build the binary for this project setting the build path (-B) set the build system generator to ninja (-G) 
+      # Set the toolchain file for the build for GBA
+      run: |
+        cmake -Bbuild -GNinja -DCMAKE_BUILD_TYPE="${{ matrix.type }}"
+        cmake --build build
+        
