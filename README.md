@@ -15,10 +15,10 @@ Building the project requires the use of [CMake](https://cmake.org/download/) an
 ### VS Code Extensions
 
 To make everything a bit nicer in VS code there are a couple of extensions that you will want to have installed:
-  [Emulicious Debugger](https://marketplace.visualstudio.com/items?itemName=emulicious.emulicious-debugger)
-  [RGBDS Z80](https://marketplace.visualstudio.com/items?itemName=donaldhays.rgbds-z80)
-  [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
-  [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
+  - [Emulicious Debugger](https://marketplace.visualstudio.com/items?itemName=emulicious.emulicious-debugger)
+  - [RGBDS Z80](https://marketplace.visualstudio.com/items?itemName=donaldhays.rgbds-z80)
+  - [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
+  - [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 
 ## Emulators 
 
