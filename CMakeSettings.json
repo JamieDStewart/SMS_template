@@ -1,0 +1,39 @@
+{
+    "version":3,
+    "configurations": [
+        {
+            "name": "base",
+            "binaryDir": "${sourceDir}/build/${presetName}",
+            "installDir": "${sourceDir}/install/${presetName}",
+            "compilerPath" : "",
+            "cmakeToolchain": "${sourceDir}/_toolchain/wla-z80.cmake",
+            "cmakeCommandArgs": "",
+            "buildCommandArgs": "-v",
+            "ctestCommandArgs": ""
+        },
+        {
+            "name":"debug",
+            "displayName": "z80_debug",
+            "inherits": "base",
+            "architecture": {
+                "value":"z80",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE":"Debug"
+            }
+        },
+        {
+            "name":"release",
+            "displayName": "z80_release",
+            "inherits": "base",
+            "architecture": {
+                "value":"z80",
+                "strategy": "external"
+            },
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE":"Release"
+            }
+        }
+    ]
+}

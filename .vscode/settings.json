@@ -1,0 +1,6 @@
+{
+    "cmake.useCMakePresets":  "auto", 
+    "cmake.complerPath" : "", 
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.configureOnOpen": true
+}

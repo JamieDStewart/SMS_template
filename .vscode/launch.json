@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "configurations": [
+        {
+            "name": "Launch in Emulicious",
+            "type": "emulicious-debugger",
+            "preLaunchTask": "CMake: build",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/SMS_template.sms",
+            "emuliciousPath": "${workspaceFolder}/_emulators/Emulicious",
+            "additionalSrcFolders": "${workspaceFolder}/src",
+            "port" : 58870,
+            "stopOnEntry": false,
+            "postDebugTask": "stop emulicious",
+        }
+    ]
+}

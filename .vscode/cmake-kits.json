@@ -1,0 +1,6 @@
+[
+    {
+        "name": "WLA-DX Z80",
+        "toolchainFile": "${workspaceRoot}/_toolchain/wla-z80.cmake"
+    }
+]

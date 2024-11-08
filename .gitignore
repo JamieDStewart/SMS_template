@@ -1,0 +1,49 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Include the two executables needed for linking and compiling z80 ASM
+!_toolchain/wla-dx_10.4a/wla-z80.exe
+!_toolchain/wla-dx_10.4a/wlalink.exe
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Visual Studio user files
+*.vcxproj.user
+# Visual Studio cache/options directory
+**/.vs/
+**/x64/
+**/obj/
+**/bin/
+
+# Folders and binary file extensions to keep out of version control
+**/_emulators/
+**/build/
+**/*.sms
+**/*.sym
+**/*.sav
+**/build/
+.vscode/ipch/
